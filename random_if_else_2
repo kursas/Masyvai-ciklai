@@ -1,0 +1,18 @@
+# Sukurti programą, kuri:
+# • Sugeneruotų tris atsitiktinius skaičius nuo 1 iki 6
+# • Jei vienas iš šių skaičių yra 5, atspausdinti „Pralaimėjai...“
+# • Kitu atveju atspausdinti „Laimėjai!“
+# Patarimas: Naudoti while ciklą, funkciją random.randint (import random), else, break
+
+import random
+
+num1 = random.randint(1, 6)
+num2 = random.randint(1, 6)
+num3 = random.randint(1, 6)
+
+print(num1, num2, num3)
+
+if num1 == 5 or num2 == 5 or num3 == 5:
+    print("Plalaimėjai")
+else:
+    print("Laimėjai")
