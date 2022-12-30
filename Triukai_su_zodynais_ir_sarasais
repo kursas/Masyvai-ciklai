@@ -1,0 +1,37 @@
+# Sukurti norimą sąrašą ir žodyną ir juose:
+# • Atspausdinti vieną norimą įrašą
+# • Pridėti įrašą
+# • Ištrinti įrašą
+# • pakeisti įrašą
+# Išbandyti kitas sąrašų ir žodynų funkcijas: clear(), index(), insert(), remove...
+# https://www.w3schools.com/python/python_ref_list.asp
+# https://www.w3schools.com/python/python_ref_dictionary.asp
+
+sarasas = [6, 98, 159, "zodziai", 5.55, True]#padaromas list'as(sarasas)
+
+print(sarasas[2])#159
+
+sarasas.append(888)#i gala pridedamas[6, 98, 159, 'zodziai', 5.55, True, 888]
+print(sarasas)
+
+sarasas.insert(2, "Naujas")#insertinamas po 6 ir 98 elem.[6, 98, 'Naujas', 159, 'zodziai', 5.55, True, 888]
+print(sarasas)
+
+sarasas.remove("Naujas")#istrina "naujas" [6, 98, 159, 'zodziai', 5.55, True, 888]
+print(sarasas)
+
+sarasas.clear()#isvalo sarasa []
+print(sarasas)
+
+amzius = {"Rokas": 20, "Andrius": 34, "Laura": 25} #padaromas dictionary(zodynas)
+
+print(amzius["Laura"]) #isves Lauros amziu 25
+
+amzius["Donatas"] = 100 #prides i dicta {'Rokas': 20, 'Andrius': 34, 'Laura': 25, 'Donatas': 100}
+print(amzius)
+
+del amzius["Laura"] #panaikins Laura irasa {'Rokas': 20, 'Andrius': 34, 'Donatas': 100}
+print(amzius)
+
+amzius["Andrius"] = 35 #pakeis Andriau metus i 35 {'Rokas': 20, 'Andrius': 35, 'Donatas': 100}
+print(amzius)
